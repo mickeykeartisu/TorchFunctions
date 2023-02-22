@@ -18,7 +18,7 @@ class Cepstrum(torch.nn.Module):
             shift_length (int): [ms]. Default 8 [ms]
             fft_point (int): [sample]. Default 1024 [sample]
             liftering_order (int): [ms]. Default 2 [ms]
-            threshold (float): Default 0.1
+            threshold (float): voicing / unvoicing threshold. Default 0.1
             device_name (str): device name. Default "cpu"
         """
         super().__init__()
